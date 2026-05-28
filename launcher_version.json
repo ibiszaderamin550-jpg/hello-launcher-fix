@@ -1,0 +1,16 @@
+{
+  "latestRelease": {
+    "versionCode": 208,
+    "versionName": "2.0.8",
+    "date": "2024.02.08",
+    "url": ["https://github.com/HMCL-dev/HMCL-PE/releases/download/2.0.8/HMCLPE-release.apk"],
+    "updateLog": "Final update."
+  },
+  "latestPrerelease": {
+    "versionCode": 208,
+    "versionName": "2.0.8",
+    "date": "2024.02.08",
+    "url": ["https://github.com/HMCL-dev/HMCL-PE/releases/download/2.0.8/HMCLPE-release.apk"],
+    "updateLog": "Final update."
+  }
+}

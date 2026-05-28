@@ -1,0 +1,48 @@
+name: Android CI
+
+on:
+  pull_request:
+    branches-ignore:
+      - ''
+  push:
+    branches-ignore:
+      - ''
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+
+    - name: set up JDK 11
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+
+    - name: Download and extract JRE21 and JRE25 from Zalith
+      run: |
+        curl -L -o zalith.apk "https://github.com/ZalithLauncher/ZalithLauncher/releases/download/1.4.1.4/ZalithLauncher-1.4.1.4.apk"
+        unzip -o zalith.apk "assets/components/jre-21/*" -d zalith_extracted/
+        unzip -o zalith.apk "assets/components/jre-25/*" -d zalith_extracted/
+        mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE21
+        mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE25
+        cd HMCLPE/src/main/assets/app_runtime/java/JRE21
+        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-21/bin-arm64.tar.xz
+        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-21/universal.tar.xz
+        cd $GITHUB_WORKSPACE/HMCLPE/src/main/assets/app_runtime/java/JRE25
+        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/bin-arm64.tar.xz
+        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/universal.tar.xz
+
+    - name: Build debug.apk
+      run: |
+        chmod +x gradlew
+        ./gradlew assembleRelease
+
+    - name : upload apk
+      uses: actions/upload-artifact@v3
+      with:
+        name: app-debug
+        path: HMCLPE/build/outputs/apk/release/*
