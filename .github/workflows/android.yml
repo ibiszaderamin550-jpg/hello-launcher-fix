@@ -1,12 +1,8 @@
 name: Android CI
 
 on:
-  pull_request:
-    branches-ignore:
-      - ''
   push:
-    branches-ignore:
-      - ''
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -36,12 +32,12 @@ jobs:
         tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/bin-arm64.tar.xz
         tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/universal.tar.xz
 
-    - name: Build debug.apk
+    - name: Build apk
       run: |
         chmod +x gradlew
         ./gradlew assembleRelease
 
-    - name : upload apk
+    - name: Upload apk
       uses: actions/upload-artifact@v3
       with:
         name: app-debug
