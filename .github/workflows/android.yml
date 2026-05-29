@@ -18,7 +18,13 @@ jobs:
       with:
         java-version: 11
 
-    - name: Download and extract JRE21 and JRE25
+    - name: Fix bottom-bar dependency
+      run: |
+        mkdir -p ~/.m2/repository/com/roughike/bottom-bar/2.3.1
+        curl -L -o ~/.m2/repository/com/roughike/bottom-bar/2.3.1/bottom-bar-2.3.1.aar "https://jcenter.bintray.com/com/roughike/bottom-bar/2.3.1/bottom-bar-2.3.1.aar"
+        curl -L -o ~/.m2/repository/com/roughike/bottom-bar/2.3.1/bottom-bar-2.3.1.pom "https://jcenter.bintray.com/com/roughike/bottom-bar/2.3.1/bottom-bar-2.3.1.pom"
+
+    - name: Download JRE21 and JRE25
       run: |
         BASE="https://github.com/ibiszaderamin550-jpg/hello-launcher-fix/releases/download/jre-assets"
         mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE21
