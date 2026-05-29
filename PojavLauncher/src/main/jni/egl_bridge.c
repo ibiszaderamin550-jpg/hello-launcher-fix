@@ -1086,7 +1086,7 @@ void* pojavCreateContext(void* contextSrc) {
             potatoBridge.eglContext = ctx;
             printf("EGLBridge: Created CTX pointer = %p\n",ctx);
             //(*env)->ThrowNew(env,(*env)->FindClass(env,"java/lang/Exception"),"Trace exception");
-            return (void*)(long)ctx;
+            return (void*)(uintptr_t)ctx;
     }
 
     if (config_renderer == RENDERER_VK_ZINK || config_renderer == RENDERER_VIRGL) {
