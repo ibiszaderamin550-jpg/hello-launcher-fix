@@ -15,8 +15,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.google.gson.Gson;
-import com.leo618.zip.IZipCallback;
-import com.leo618.zip.ZipManager;
+// Removed IZipCallback reference
+// Removed ZipManager reference
 import com.tungsten.filepicker.Constants;
 import com.tungsten.filepicker.FileChooser;
 import com.tungsten.hmclpe.R;
@@ -93,7 +93,7 @@ public class ControllerManagerDialog extends Dialog implements View.OnClickListe
                 FileUtils.createDirectory(AppManifest.DEFAULT_CACHE_DIR + "/import/");
                 FileUtils.copyFile(path,AppManifest.DEFAULT_CACHE_DIR + "/import/" + name);
                 FileUtils.rename(AppManifest.DEFAULT_CACHE_DIR + "/import/" + name,name.substring(0,name.lastIndexOf(".")) + ".zip");
-                ZipManager.unzip(AppManifest.DEFAULT_CACHE_DIR + "/import/" + name.substring(0, name.lastIndexOf(".")) + ".zip", AppManifest.DEFAULT_CACHE_DIR + "/import","HMCL-PE-Password", new IZipCallback() {
+// Removed ZipManager reference
                     @Override
                     public void onStart() {
 
