@@ -67,7 +67,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':FilePicker')
     implementation project(path: ':ZipTools')
     implementation project(path: ':Boat')
     implementation project(path: ':PojavLauncher')
