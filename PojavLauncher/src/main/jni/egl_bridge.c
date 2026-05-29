@@ -1086,7 +1086,7 @@ void* pojavCreateContext(void* contextSrc) {
             potatoBridge.eglContext = ctx;
             printf("EGLBridge: Created CTX pointer = %p\n",ctx);
             //(*env)->ThrowNew(env,(*env)->FindClass(env,"java/lang/Exception"),"Trace exception");
-            return (long)ctx;
+            return (void*)(long)ctx;
     }
 
     if (config_renderer == RENDERER_VK_ZINK || config_renderer == RENDERER_VIRGL) {
@@ -1108,7 +1108,7 @@ JNIEXPORT void JNICALL Java_org_lwjgl_opengl_GL_nativeRegalMakeCurrent(JNIEnv *e
 }
 JNIEXPORT jlong JNICALL
 Java_org_lwjgl_opengl_GL_getGraphicsBufferAddr(JNIEnv *env, jobject thiz) {
-    return &gbuffer;
+    return (jlong)(uintptr_t)&gbuffer;
 }
 JNIEXPORT jintArray JNICALL
 Java_org_lwjgl_opengl_GL_getNativeWidthHeight(JNIEnv *env, jobject thiz) {
