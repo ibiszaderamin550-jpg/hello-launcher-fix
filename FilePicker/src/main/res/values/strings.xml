@@ -11,4 +11,5 @@
     <string name="rename">Rename</string>
     <string name="cancel">Cancel</string>
     <string name="ok">OK</string>
+    <string name="selection_error_single">Cannot select more than one file</string>
 </resources>
