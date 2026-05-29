@@ -29,9 +29,9 @@ android {
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.11.0'
-    implementation files('libs/androidbootstrap-2.3.1.aar')
-    implementation files('libs/bottom-bar-2.3.1.aar')
-    implementation files('libs/recyclerview-fastscroll-1.0.20.aar')
+    compileOnly files('libs/androidbootstrap-2.3.1.aar')
+    compileOnly files('libs/bottom-bar-2.3.1.aar')
+    compileOnly files('libs/recyclerview-fastscroll-1.0.20.aar')
     implementation files('libs/commons-io-2.11.0.jar')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
