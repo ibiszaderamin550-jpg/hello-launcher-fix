@@ -4,7 +4,7 @@
     <string name="dialog_unknown_error_title">Upozorenje</string>
     <string name="dialog_unknown_error_positive">Potvrdi</string>
     <string name="dialog_verify_title">verifikaciona dozvola za probnu verziju</string>
-    <string name="dialog_verify_msg">Kod vašeg uređaja:\n%s\nMolim vas popunite potvrdni verifikacioni kod koji se slaže kodu vašeg uređaja.</string>
+    <string name="dialog_verify_msg" formatted="false">Kod vašeg uređaja:\n%s\nMolim vas popunite potvrdni verifikacioni kod koji se slaže kodu vašeg uređaja.</string>
     <string name="dialog_verify_code">Potvrdi verifikacioni kod</string>
     <string name="dialog_verify_donate">Dobi dozvolu</string>
     <string name="dialog_verify_copy">Kopiraj kod uređaja</string>
@@ -91,7 +91,7 @@
     <string name="dialog_add_microsoft_account_hint">Informacije</string>
     <string name="dialog_add_microsoft_account_hint_text">Moraćete da kliknete na dugme za prijavu i završite prijavu u novootvorenom prozoru pretraživača.</string>
     <string name="dialog_add_microsoft_account_purchase"><a href="https://www.minecraft.net/zh-hans/store/minecraft-java-edition">Buy Minecraft</a></string>
-    <string name="dialog_add_microsoft_account_help"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">Kako promeniti datum rođenja naloga</a></string>
+    <string name="dialog_add_microsoft_account_help" formatted="false"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">Kako promeniti datum rođenja naloga</a></string>
     <string name="dialog_add_microsoft_account_setting"><a href="https://account.live.com/editprof.aspx">Account Settings Page</a></string>
     <string name="dialog_add_microsoft_account_login">uloguj se</string>
     <string name="dialog_add_microsoft_account_cancel">otkaži</string>
@@ -176,7 +176,7 @@
     <string name="mod_manager_ui_disable">Isključi</string>
     <string name="mod_manager_ui_select_all">Obeleži sve</string>
     <string name="mod_manager_ui_negative">Otkaži</string>
-    <string name="mod_manager_ui_info">%n, Version: %v, Author(s): %a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n, Version: %v, Author(s): %a</string>
     <string name="mod_manager_ui_unknown_info">Nepoznato</string>
     <string name="mod_manager_ui_official_page">Oficionalna stranica</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -188,7 +188,7 @@
     <string name="dialog_delete_mod_positive">Da</string>
     <string name="dialog_delete_mod_negative">Ne</string>
     <string name="dialog_check_mod_update_title">Proveravanje unapređenja</string>
-    <string name="dialog_check_mod_update_task">pretraži unapređenja - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">pretraži unapređenja - %c/%t</string>
     <string name="dialog_check_mod_update_negative">Otkaži</string>
     <string name="mod_update_ui_title">pretraži unapređenja</string>
     <string name="mod_update_ui_file">Fajl</string>
@@ -202,7 +202,7 @@
     <string name="world_manager_ui_refresh">osveži</string>
     <string name="world_manager_ui_add">Dodaj svet (.zip)</string>
     <string name="world_manager_ui_download">Preuzmi svet</string>
-    <string name="world_manager_ui_info">%f. Poslednje igano %t. Verzija igre: %v.</string>
+    <string name="world_manager_ui_info" formatted="false">%f. Poslednje igano %t. Verzija igre: %v.</string>
     <string name="world_manager_ui_unknown_game_version">Nepoznato</string>
     <string name="export_world_ui_title">Izvadi svet</string>
     <string name="export_world_ui_sub_title">Izvadi svet</string>
@@ -210,7 +210,7 @@
     <string name="export_world_ui_world_name">Ime sveta</string>
     <string name="export_world_ui_game_version">VErzija igre</string>
     <string name="export_world_ui_export">izvadi</string>
-    <string name="manage_datapack_ui_title">Svet %w - Datapacks</string>
+    <string name="manage_datapack_ui_title" formatted="false">Svet %w - Datapacks</string>
     <string name="manage_datapack_ui_refresh">Osveži</string>
     <string name="manage_datapack_ui_add">Instaliraj datapack</string>
     <string name="manage_datapack_ui_delete">Ukloni</string>
@@ -280,8 +280,8 @@
     <string name="dialog_copy_version_positive">Uredu</string>
     <string name="dialog_copy_version_negative">Otkaži</string>
     <string name="dialog_delete_version_title">Upozorenje</string>
-    <string name="dialog_delete_version_msg">Da li ste sigurni da želite da trajno uklonite verziju %s? Ova radnja se ne može opozvati!</string>
-    <string name="dialog_delete_version_isolate_msg">Pošto je ovaj Istancu uskladišten u izolovanom direktorijumu, njegovo brisanje će takođe izbrisati njegove sačuvane podatke i druge podatke. Da li i dalje želite da izbrišete instance %s?</string>
+    <string name="dialog_delete_version_msg" formatted="false">Da li ste sigurni da želite da trajno uklonite verziju %s? Ova radnja se ne može opozvati!</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">Pošto je ovaj Istancu uskladišten u izolovanom direktorijumu, njegovo brisanje će takođe izbrisati njegove sačuvane podatke i druge podatke. Da li i dalje želite da izbrišete instance %s?</string>
     <string name="dialog_delete_version_positive">Obriši</string>
     <string name="dialog_delete_version_negative">Otkaži</string>
     <string name="default_game_file_directory_list_pri">Deljeni direktorijum</string>
@@ -360,9 +360,9 @@
     <string name="dialog_install_local_title">Instaliraj/Ažuriraj sa lokalnih fajlova</string>
     <string name="dialog_install_local_recognize">Prepoznavanje instalera</string>
     <string name="dialog_install_update_title">Promeni verziju</string>
-    <string name="dialog_install_update_state">Instaliraj %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">Instaliraj %s %v</string>
     <string name="dialog_change_version_title">Promeni verziju</string>
-    <string name="dialog_change_version_msg">Da li ste sigurni da želite da promenite %s sa verzije %v1 to %v2?</string>
+    <string name="dialog_change_version_msg" formatted="false">Da li ste sigurni da želite da promenite %s sa verzije %v1 to %v2?</string>
     <string name="dialog_change_version_positive">Da</string>verziju
     <string name="dialog_change_version_negative">Ne</string>
     <string name="dialog_install_game_title">Dodaj novu instancu</string>
@@ -384,7 +384,7 @@
     <string name="dialog_install_fail_title">Instaliranje nije uspelo</string>
     <string name="dialog_install_fail_positive">Uredu</string>
     <string name="dialog_incorrect_version_title">Instaliranje nije uspelo</string>
-    <string name="dialog_incorrect_version_msg">Ovoj biblioteci je potrebna verzija %s1, ali je instalirana %s2.</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">Ovoj biblioteci je potrebna verzija %s1, ali je instalirana %s2.</string>
     <string name="dialog_incorrect_version_positive">Uredu</string>
     <string name="dialog_incorrect_installer_title">Instaliranje nije uspelo</string>
     <string name="dialog_incorrect_installer_msg">Nije moguće identifikovati dostavljenu datoteku. Ako instalirate mod, idite na stranicu „Mods“..</string>
@@ -576,7 +576,7 @@
     <string name="game_setting_ui_alert">Upozorenje</string>
     <string name="game_setting_ui_game_dir_alert_text">Uključite \'Isolated\' opciju ispod \'Working Directory\' da dozvolite trenutnoj instanci da skladišti svoja podešavanja, sačuvane podatke i modove u zasebnom direktorijumu.\n\nIt Preporučuje se da uključite ovu opciju da biste izbegli sukobe modova, ali ćete morati ručno da premestite svoje sačuvane podatke.</string>
     <string name="game_setting_ui_skin_alert_text">Skinovi za oflajn naloge su sada podržani. Možete da odete u podešavanja naloga da promenite svoju kožu i ogrtač, ali drugi igrači to ne mogu da vide u igri za više igrača.</string>
-    <string name="game_setting_ui_alert_text">Trenutna instanca [%s] je omogućila podešavanja po instanci, sve opcije na ovoj stranici neće uticati na tu instancu. Kliknite ovde da biste izmenili sopstvene opcije.</string>
+    <string name="game_setting_ui_alert_text" formatted="false">Trenutna instanca [%s] je omogućila podešavanja po instanci, sve opcije na ovoj stranici neće uticati na tu instancu. Kliknite ovde da biste izmenili sopstvene opcije.</string>
     <string name="game_setting_ui_alert_jump">Uredite trenutna podešavanja instance</string>
     <string name="game_setting_ui_java_path">Java Path</string>
     <string name="game_setting_ui_java_path_auto">automatcki izaberi</string>
@@ -589,9 +589,9 @@
     <string name="game_setting_ui_game_ram">memorija</string>
     <string name="game_setting_ui_auto_ram">Automatski podesi</string>
     <string name="game_setting_ui_min_ram">minimalna memorija</string>
-    <string name="game_setting_ui_used_ram">%s GB Used</string>
-    <string name="game_setting_ui_min_distribution">%s GB minimum</string>
-    <string name="game_setting_ui_actual_distribution">%s GB podešeno</string>
+    <string name="game_setting_ui_used_ram" formatted="false">%s GB Used</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">%s GB minimum</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">%s GB podešeno</string>
     <string name="game_setting_ui_resolution">rezulucija</string>
     <string name="game_setting_ui_server">Server adresa</string>
     <string name="game_setting_ui_log">Pokaži logove</string>

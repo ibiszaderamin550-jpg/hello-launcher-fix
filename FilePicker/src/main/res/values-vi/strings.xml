@@ -5,10 +5,10 @@
     <string name="cancel">Hủy bỏ</string>
     <string name="chooseitems">Chọn các mặt hàng</string>
     <string name="copy">Sao chép</string>
-    <string name="copying">Đang sao chép %s</string>
+    <string name="copying" formatted="false">Đang sao chép %s</string>
     <string name="cut">Cắt</string>
     <string name="delete">Xóa bỏ</string>
-    <string name="delete_dialog_message">Bạn có chắc chắn muốn xóa %d mục không?</string>
+    <string name="delete_dialog_message" formatted="false">Bạn có chắc chắn muốn xóa %d mục không?</string>
     <string name="delete_dialog_title">Xóa các tập tin</string>
     <string name="delete_error">Đã xảy ra lỗi khi xóa</string>
     <string name="delete_progress">Đang xóa Vui lòng đợi…</string>
@@ -18,11 +18,11 @@
     <string name="external_storage_error">Không thể định vị cửa hàng bên ngoài</string>
     <string name="file">Tập tin</string>
     <string name="file_image">Hình ảnh tệp</string>
-    <string name="file_info">%1$s Sửa đổi lần cuối: %2$s</string>
-    <string name="file_modified">Sửa đổi lần cuối %s</string>
-    <string name="file_path">Đường dẫn %s</string>
-    <string name="file_size">Kích thước: %s</string>
-    <string name="file_type">Loại: %s</string>
+    <string name="file_info" formatted="false">%1$s Sửa đổi lần cuối: %2$s</string>
+    <string name="file_modified" formatted="false">Sửa đổi lần cuối %s</string>
+    <string name="file_path" formatted="false">Đường dẫn %s</string>
+    <string name="file_size" formatted="false">Kích thước: %s</string>
+    <string name="file_type" formatted="false">Loại: %s</string>
     <string name="file_type_multiple">"Multiple Files"</string>
     <string name="file_type_plain">Type:</string>
     <string name="filter">Lọc</string>
@@ -30,7 +30,7 @@
     <string name="folder_creation_error">Đã xảy ra lỗi khi tạo một thư mục mới</string>
     <string name="invalid_selections">Các lựa chọn không hợp lệ</string>
     <string name="more">Hơn</string>
-    <string name="moving">Đang di chuyển %s</string>
+    <string name="moving" formatted="false">Đang di chuyển %s</string>
     <string name="new_folder">Thư mục mới</string>
     <string name="no_app_to_handle">Không tìm thấy ứng dụng nào để xử lý loại tệp này.</string>
     <string name="no_files_paste">Không có tệp nào được chọn để dán</string>
@@ -55,7 +55,7 @@
     <string name="select">Lựa chọn</string>
     <string name="select_multiple">Chọn nhiều tệp</string>
     <string name="selectall">Chọn tất cả</string>
-    <string name="selected_items">Đã chọn %d mục</string>
+    <string name="selected_items" formatted="false">Đã chọn %d mục</string>
     <string name="selection_error_single">Vui lòng chỉ chọn 1 mục</string>
     <string name="share">Đăng lại</string>
     <string name="sharing_no_app">Không tìm thấy ứng dụng nào để xử lý việc chia sẻ</string>

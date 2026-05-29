@@ -24,27 +24,27 @@
     <string name="ok">完成</string>
     <string name="filter_only">仅过滤</string>
     <string name="sort_by">排序方式</string>
-    <string name="file_info">%1$s 上次编辑: %2$s</string>
+    <string name="file_info" formatted="false">%1$s 上次编辑: %2$s</string>
     <string name="read_only">（只读）</string>
     <string name="folder_creation_error">创建新文件夹时发生了一个错误</string>
     <string name="permission_error">没有写入权限</string>
     <string name="delete_dialog_title">删除文件</string>
-    <string name="delete_dialog_message">你确定要删除 %d 吗？</string>
+    <string name="delete_dialog_message" formatted="false">你确定要删除 %d 吗？</string>
     <string name="delete_progress">正在删除，请稍候</string>
     <string name="delete_error">删除时发生了一个错误</string>
     <string name="no_items_selected">没有选中</string>
     <string name="wait">请稍候</string>
-    <string name="copying">正在复制 %s</string>
-    <string name="moving">正在移动 %s</string>
+    <string name="copying" formatted="false">正在复制 %s</string>
+    <string name="moving" formatted="false">正在移动 %s</string>
     <string name="pasting_error">粘贴时发生了一个错误</string>
     <string name="rename_dialog_title">重命名</string>
     <string name="rename_error">重命名时发生了一个错误</string>
     <string name="directory">文件夹</string>
     <string name="file">文件</string>
-    <string name="file_type">类型: %s</string>
-    <string name="file_size">大小: %s</string>
-    <string name="file_modified">最近编辑 %s</string>
-    <string name="file_path">路径 %s</string>
+    <string name="file_type" formatted="false">类型: %s</string>
+    <string name="file_size" formatted="false">大小: %s</string>
+    <string name="file_modified" formatted="false">最近编辑 %s</string>
+    <string name="file_path" formatted="false">路径 %s</string>
     <string name="file_type_multiple">多选文件</string>
     <string name="file_type_plain">类型：</string>
     <string name="property_error">无法计算属性</string>
@@ -62,7 +62,7 @@
     <string name="error_common">错误</string>
     <string name="permission_request_error">没有权限请求</string>
     <string name="selection_error_single">请只选择一项</string>
-    <string name="selected_items">选中了 %d</string>
+    <string name="selected_items" formatted="false">选中了 %d</string>
     <string name="properties_title">属性</string>
     <string name="chooseitems">选择</string>
 </resources>

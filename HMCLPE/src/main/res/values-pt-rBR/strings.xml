@@ -4,7 +4,7 @@
     <string name="dialog_unknown_error_title">Aviso</string>
     <string name="dialog_unknown_error_positive">Confirmar</string>
     <string name="dialog_verify_title">Verificação de permissão de teste de versão de desenvolvimento</string>
-    <string name="dialog_verify_msg">O código do seu dispositivo é:\n%s\nPreencha o código de verificação de autorização que corresponde a este código de dispositivo.</string>
+    <string name="dialog_verify_msg" formatted="false">O código do seu dispositivo é:\n%s\nPreencha o código de verificação de autorização que corresponde a este código de dispositivo.</string>
     <string name="dialog_verify_code">Código de verificação de autorização</string>
     <string name="dialog_verify_donate">Obter permissão</string>
     <string name="dialog_verify_copy">Copiar código do dispositivo</string>
@@ -91,7 +91,7 @@
     <string name="dialog_add_microsoft_account_hint">Informação</string>
     <string name="dialog_add_microsoft_account_hint_text">Você precisará clicar no botão de login e concluir o login na janela do navegador recém-aberta.</string>
     <string name="dialog_add_microsoft_account_purchase"><a href="https://www.minecraft.net/zh-hans/store/minecraft-java-edition">Comprar Minecraft</a></string>
-    <string name="dialog_add_microsoft_account_help"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">How to Change Account Birth Date</a></string>
+    <string name="dialog_add_microsoft_account_help" formatted="false"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">How to Change Account Birth Date</a></string>
     <string name="dialog_add_microsoft_account_setting"><a href="https://account.live.com/editprof.aspx">Página de configurações da conta</a></string>
     <string name="dialog_add_microsoft_account_login">Login</string>
     <string name="dialog_add_microsoft_account_cancel">Cancelar</string>
@@ -176,7 +176,7 @@
     <string name="mod_manager_ui_disable">Desativar</string>
     <string name="mod_manager_ui_select_all">Selecionar Tudo</string>
     <string name="mod_manager_ui_negative">Cancelar</string>
-    <string name="mod_manager_ui_info">%n, Versão: %v, Autor(a): %a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n, Versão: %v, Autor(a): %a</string>
     <string name="mod_manager_ui_unknown_info">Desconhecido</string>
     <string name="mod_manager_ui_official_page">Pagina Oficial</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -188,7 +188,7 @@
     <string name="dialog_delete_mod_positive">Sim</string>
     <string name="dialog_delete_mod_negative">Não</string>
     <string name="dialog_check_mod_update_title">Verificando atualizações</string>
-    <string name="dialog_check_mod_update_task">Verificar atualizações - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">Verificar atualizações - %c/%t</string>
     <string name="dialog_check_mod_update_negative">Cancelar</string>
     <string name="mod_update_ui_title">Verificar atualizações</string>
     <string name="mod_update_ui_file">Arquivo</string>
@@ -202,7 +202,7 @@
     <string name="world_manager_ui_refresh">Atualizar</string>
     <string name="world_manager_ui_add">Adicionar um mundo (.zip)</string>
     <string name="world_manager_ui_download">Baixar um mundo</string>
-    <string name="world_manager_ui_info">%f. Último jogado em %t. Versão do jogo: %v.</string>
+    <string name="world_manager_ui_info" formatted="false">%f. Último jogado em %t. Versão do jogo: %v.</string>
     <string name="world_manager_ui_unknown_game_version">Desconhecido</string>
     <string name="export_world_ui_title">Exportar mundo</string>
     <string name="export_world_ui_sub_title">Exportar mundo</string>
@@ -210,7 +210,7 @@
     <string name="export_world_ui_world_name">Nome do mundo</string>
     <string name="export_world_ui_game_version">Versão do jogo</string>
     <string name="export_world_ui_export">Exportar</string>
-    <string name="manage_datapack_ui_title">Mundo %w - Datapacks</string>
+    <string name="manage_datapack_ui_title" formatted="false">Mundo %w - Datapacks</string>
     <string name="manage_datapack_ui_refresh">Atualizar</string>
     <string name="manage_datapack_ui_add">Instalar datapack</string>
     <string name="manage_datapack_ui_delete">Remover</string>
@@ -280,8 +280,8 @@
     <string name="dialog_copy_version_positive">OK</string>
     <string name="dialog_copy_version_negative">Cancelar</string>
     <string name="dialog_delete_version_title">Aviso</string>
-    <string name="dialog_delete_version_msg">Tem certeza de que deseja remover permanentemente a versão %s?  Essa ação não pode ser desfeita!</string>
-    <string name="dialog_delete_version_isolate_msg">Como essa instância está armazenada em um diretório isolado, excluí-la também excluirá seus salvamentos e outros dados.  Você ainda deseja excluir a instância %s?</string>
+    <string name="dialog_delete_version_msg" formatted="false">Tem certeza de que deseja remover permanentemente a versão %s?  Essa ação não pode ser desfeita!</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">Como essa instância está armazenada em um diretório isolado, excluí-la também excluirá seus salvamentos e outros dados.  Você ainda deseja excluir a instância %s?</string>
     <string name="dialog_delete_version_positive">Deletar</string>
     <string name="dialog_delete_version_negative">Cancelar</string>
     <string name="default_game_file_directory_list_pri">Diretório compartilhado</string>
@@ -360,9 +360,9 @@
     <string name="dialog_install_local_title">Instalar/atualizar do arquivo local</string>
     <string name="dialog_install_local_recognize">Reconhecendo o instalador</string>
     <string name="dialog_install_update_title">Alterar versão</string>
-    <string name="dialog_install_update_state">Instalar %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">Instalar %s %v</string>
     <string name="dialog_change_version_title">Alterar versão</string>
-    <string name="dialog_change_version_msg">Tem certeza de que deseja mudar %s da versão %v1 para %v2?</string>
+    <string name="dialog_change_version_msg" formatted="false">Tem certeza de que deseja mudar %s da versão %v1 para %v2?</string>
     <string name="dialog_change_version_positive">Sim</string>
     <string name="dialog_change_version_negative">Não</string>
     <string name="dialog_install_game_title">Adicionar uma nova instância</string>
@@ -384,7 +384,7 @@
     <string name="dialog_install_fail_title">Instalação falhada</string>
     <string name="dialog_install_fail_positive">OK</string>
     <string name="dialog_incorrect_version_title">Instalação falhada</string>
-    <string name="dialog_incorrect_version_msg">Esta biblioteca requer a versão do jogo %s1, mas a instalada é %s2.</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">Esta biblioteca requer a versão do jogo %s1, mas a instalada é %s2.</string>
     <string name="dialog_incorrect_version_positive">OK</string>
     <string name="dialog_incorrect_installer_title">Instalação falhada</string>
     <string name="dialog_incorrect_installer_msg">Não foi possível identificar o arquivo fornecido.  Se você estiver instalando um mod, vá para a página "Mods".</string>
@@ -576,7 +576,7 @@
     <string name="game_setting_ui_alert">Aviso</string>
     <string name="game_setting_ui_game_dir_alert_text">Ative a opção \'Isolated\' em \'Working Directory\' para permitir que a instância atual armazene suas configurações, salvamentos e mods em um diretório separado.\n\nRecomenda-se ativar esta opção para evitar conflitos de mods  , mas você precisará mover seus salvamentos manualmente.</string>
     <string name="game_setting_ui_skin_alert_text">Skins para contas offline agora são suportadas.  Você pode acessar as configurações da conta para alterar sua skin e capa, mas outros jogadores não podem vê-lo no multiplayer.</string>
-    <string name="game_setting_ui_alert_text">A instância atual [%s] ativou as configurações por instância, todas as opções nesta página não afetarão essa instância.  Clique aqui para modificar suas próprias opções.</string>
+    <string name="game_setting_ui_alert_text" formatted="false">A instância atual [%s] ativou as configurações por instância, todas as opções nesta página não afetarão essa instância.  Clique aqui para modificar suas próprias opções.</string>
     <string name="game_setting_ui_alert_jump">Editar configurações da instância atual</string>
     <string name="game_setting_ui_java_path">Caminho Java</string>
     <string name="game_setting_ui_java_path_auto">Selecionar automaticamente</string>
@@ -589,9 +589,9 @@
     <string name="game_setting_ui_game_ram">Memória</string>
     <string name="game_setting_ui_auto_ram">Alocar automaticamente</string>
     <string name="game_setting_ui_min_ram">Memória mínima</string>
-    <string name="game_setting_ui_used_ram">%s GB Usado</string>
-    <string name="game_setting_ui_min_distribution">%s GB Minimum</string>
-    <string name="game_setting_ui_actual_distribution">%s GB alocado</string>
+    <string name="game_setting_ui_used_ram" formatted="false">%s GB Usado</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">%s GB Minimum</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">%s GB alocado</string>
     <string name="game_setting_ui_resolution">Resolução</string>
     <string name="game_setting_ui_server">Endereço do servidor</string>
     <string name="game_setting_ui_log">Mostrar registros</string>

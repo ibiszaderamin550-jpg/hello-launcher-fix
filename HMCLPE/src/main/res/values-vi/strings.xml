@@ -350,8 +350,8 @@
     <string name="dialog_delete_rocker_negative">Hủy bỏ</string>
     <string name="dialog_delete_rocker_positive">Xóa bỏ</string>
     <string name="dialog_delete_rocker_title">Thông tin</string>
-    <string name="dialog_delete_version_isolate_msg">Vì cá thể này được lưu trữ trong một thư mục biệt lập, việc xóa nó cũng sẽ xóa các bản lưu và dữ liệu khác của nó. Bạn vẫn muốn xóa bản sao %s?</string>
-    <string name="dialog_delete_version_msg">Bạn có chắc chắn muốn xóa vĩnh viễn phiên bản %s không? Hành động này không thể được hoàn tác!</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">Vì cá thể này được lưu trữ trong một thư mục biệt lập, việc xóa nó cũng sẽ xóa các bản lưu và dữ liệu khác của nó. Bạn vẫn muốn xóa bản sao %s?</string>
+    <string name="dialog_delete_version_msg" formatted="false">Bạn có chắc chắn muốn xóa vĩnh viễn phiên bản %s không? Hành động này không thể được hoàn tác!</string>
     <string name="dialog_delete_version_negative">Hủy bỏ</string>
     <string name="dialog_delete_version_positive">Xóa bỏ</string>
     <string name="dialog_delete_version_title">Cảnh báo</string>
@@ -511,7 +511,7 @@
     <string name="dialog_verify_copy">Sao chép mã thiết bị</string>
     <string name="dialog_verify_copy_success">Sao chép thành công</string>
     <string name="dialog_verify_donate">Xin phép</string>
-    <string name="dialog_verify_msg">Mã thiết bị của bạn là:\n%s\nVui lòng điền mã xác minh khớp với mã thiết bị này.</string>
+    <string name="dialog_verify_msg" formatted="false">Mã thiết bị của bạn là:\n%s\nVui lòng điền mã xác minh khớp với mã thiết bị này.</string>
     <string name="dialog_verify_title">Xác minh quyền kiểm tra phiên bản phát triển</string>
     <string name="dialog_verify_verify">Kiểm chứng</string>
     <string name="dialog_verify_verify_fail">Xác minh không hoàn thành</string>
@@ -676,11 +676,11 @@
     <string name="game_manager_ui_test_game">Khởi chạy thử nghiệm</string>
     <string name="game_manager_ui_title">Quản lý phiên bản</string>
     <string name="game_manager_ui_world">Thế giới / Datapacks</string>
-    <string name="game_setting_ui_actual_distribution">Đã phân bổ %s GB</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">Đã phân bổ %s GB</string>
     <string name="game_setting_ui_advance_setting">Cài đặt nâng cao</string>
     <string name="game_setting_ui_alert">Cảnh báo</string>
     <string name="game_setting_ui_alert_jump">Chỉnh sửa cài đặt phiên bản hiện tại</string>
-    <string name="game_setting_ui_alert_text">Phiên bản hiện tại [%s] đã bật cài đặt cho mỗi phiên bản, tất cả các tùy chọn trên trang này sẽ không ảnh hưởng đến phiên bản đó. Bấm vào đây để sửa đổi các tùy chọn của riêng nó.</string>
+    <string name="game_setting_ui_alert_text" formatted="false">Phiên bản hiện tại [%s] đã bật cài đặt cho mỗi phiên bản, tất cả các tùy chọn trên trang này sẽ không ảnh hưởng đến phiên bản đó. Bấm vào đây để sửa đổi các tùy chọn của riêng nó.</string>
     <string name="game_setting_ui_auto_ram">Tự động phân bổ</string>
     <string name="game_setting_ui_boat_renderer">Trình kết xuất thuyền</string>
     <string name="game_setting_ui_check_forge">Không chọn hoạt ảnh Forge loading</string>
@@ -706,7 +706,7 @@
     <string name="game_setting_ui_jvm_setting_arg_hint">Nhập vào đây để ghi đè các tùy chọn mặc định</string>
     <string name="game_setting_ui_launch_setting">Khởi chạy các tùy chọn</string>
     <string name="game_setting_ui_log">Hiển thị Nhật ký</string>
-    <string name="game_setting_ui_min_distribution">Tối thiểu %s GB</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">Tối thiểu %s GB</string>
     <string name="game_setting_ui_min_ram">Bộ nhớ tối thiểu</string>
     <string name="game_setting_ui_pojav_renderer">Trình kết xuất PojavLauncher</string>
     <string name="game_setting_ui_resolution">Nghị quyết</string>
@@ -715,7 +715,7 @@
     <string name="game_setting_ui_skin_alert">Thông tin</string>
     <string name="game_setting_ui_skin_alert_text">Giao diện cho các tài khoản ngoại tuyến hiện đã được hỗ trợ. Bạn có thể vào cài đặt tài khoản để thay đổi da và áo choàng của mình, nhưng những người chơi khác không thể nhìn thấy nó trong nhiều người chơi.</string>
     <string name="game_setting_ui_touch_injector">BE Gesture</string>
-    <string name="game_setting_ui_used_ram">Đã sử dụng %s GB</string>
+    <string name="game_setting_ui_used_ram" formatted="false">Đã sử dụng %s GB</string>
     <string name="game_setting_ui_version_isolation">Thư mục làm việc</string>
     <string name="game_setting_ui_version_isolation_custom">Phong tục</string>
     <string name="game_setting_ui_version_isolation_default">Mặc định (.minecraft /)</string>
@@ -793,7 +793,7 @@
     <string name="manage_datapack_ui_disable">Vô hiệu hóa</string>
     <string name="manage_datapack_ui_enable">Cho phép</string>
     <string name="manage_datapack_ui_refresh">Làm mới</string>
-    <string name="manage_datapack_ui_title">Thế giới %w - Datapacks</string>
+    <string name="manage_datapack_ui_title" formatted="false">Thế giới %w - Datapacks</string>
     <string name="manage_menu_copy">Phiên bản trùng lặp</string>
     <string name="manage_menu_delete">Xóa phiên bản</string>
     <string name="manage_menu_delete_libs">Xóa tất cả thư viện</string>

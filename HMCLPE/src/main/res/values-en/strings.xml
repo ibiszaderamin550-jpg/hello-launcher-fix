@@ -4,7 +4,7 @@
     <string name="dialog_unknown_error_title">Warning</string>
     <string name="dialog_unknown_error_positive">Confirm</string>
     <string name="dialog_verify_title">Development version test permission verification</string>
-    <string name="dialog_verify_msg">Your device code is:\n%s\nPlease fill in the authorization verification code that matches this device code.</string>
+    <string name="dialog_verify_msg" formatted="false">Your device code is:\n%s\nPlease fill in the authorization verification code that matches this device code.</string>
     <string name="dialog_verify_code">Authorization verification code</string>
     <string name="dialog_verify_donate">Get permission</string>
     <string name="dialog_verify_copy">Copy device code</string>
@@ -91,7 +91,7 @@
     <string name="dialog_add_microsoft_account_hint">Information</string>
     <string name="dialog_add_microsoft_account_hint_text">You will need to click the login button and complete the login in the newly opened browser window.</string>
     <string name="dialog_add_microsoft_account_purchase"><a href="https://www.minecraft.net/zh-hans/store/minecraft-java-edition">Buy Minecraft</a></string>
-    <string name="dialog_add_microsoft_account_help"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">How to Change Account Birth Date</a></string>
+    <string name="dialog_add_microsoft_account_help" formatted="false"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">How to Change Account Birth Date</a></string>
     <string name="dialog_add_microsoft_account_setting"><a href="https://account.live.com/editprof.aspx">Account Settings Page</a></string>
     <string name="dialog_add_microsoft_account_login">Login</string>
     <string name="dialog_add_microsoft_account_cancel">Cancel</string>
@@ -176,7 +176,7 @@
     <string name="mod_manager_ui_disable">Disable</string>
     <string name="mod_manager_ui_select_all">Select All</string>
     <string name="mod_manager_ui_negative">Cancel</string>
-    <string name="mod_manager_ui_info">%n, Version: %v, Author(s): %a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n, Version: %v, Author(s): %a</string>
     <string name="mod_manager_ui_unknown_info">Unknown</string>
     <string name="mod_manager_ui_official_page">Official Page</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -188,7 +188,7 @@
     <string name="dialog_delete_mod_positive">Yes</string>
     <string name="dialog_delete_mod_negative">No</string>
     <string name="dialog_check_mod_update_title">Checking for Updates</string>
-    <string name="dialog_check_mod_update_task">Check for Updates - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">Check for Updates - %c/%t</string>
     <string name="dialog_check_mod_update_negative">Cancel</string>
     <string name="mod_update_ui_title">Check for Updates</string>
     <string name="mod_update_ui_file">File</string>
@@ -202,7 +202,7 @@
     <string name="world_manager_ui_refresh">Refresh</string>
     <string name="world_manager_ui_add">Add a World (.zip)</string>
     <string name="world_manager_ui_download">Download a World</string>
-    <string name="world_manager_ui_info">%f. Last played on %t. Game Version: %v.</string>
+    <string name="world_manager_ui_info" formatted="false">%f. Last played on %t. Game Version: %v.</string>
     <string name="world_manager_ui_unknown_game_version">Unknown</string>
     <string name="export_world_ui_title">Export World</string>
     <string name="export_world_ui_sub_title">Export World</string>
@@ -210,7 +210,7 @@
     <string name="export_world_ui_world_name">World Name</string>
     <string name="export_world_ui_game_version">Game Version</string>
     <string name="export_world_ui_export">Export</string>
-    <string name="manage_datapack_ui_title">World %w - Datapacks</string>
+    <string name="manage_datapack_ui_title" formatted="false">World %w - Datapacks</string>
     <string name="manage_datapack_ui_refresh">Refresh</string>
     <string name="manage_datapack_ui_add">Install datapack</string>
     <string name="manage_datapack_ui_delete">Remove</string>
@@ -280,8 +280,8 @@
     <string name="dialog_copy_version_positive">OK</string>
     <string name="dialog_copy_version_negative">Cancel</string>
     <string name="dialog_delete_version_title">Warning</string>
-    <string name="dialog_delete_version_msg">Are you sure you want to permanently remove the version %s? This action cannot be undone!</string>
-    <string name="dialog_delete_version_isolate_msg">Since this instance is stored in an isolated directory, deleting it will also delete its saves and other data. Do you still want to delete instance %s?</string>
+    <string name="dialog_delete_version_msg" formatted="false">Are you sure you want to permanently remove the version %s? This action cannot be undone!</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">Since this instance is stored in an isolated directory, deleting it will also delete its saves and other data. Do you still want to delete instance %s?</string>
     <string name="dialog_delete_version_positive">Delete</string>
     <string name="dialog_delete_version_negative">Cancel</string>
     <string name="default_game_file_directory_list_pri">Shared Directory</string>
@@ -360,9 +360,9 @@
     <string name="dialog_install_local_title">Install/Update from Local File</string>
     <string name="dialog_install_local_recognize">Recognizing Installer</string>
     <string name="dialog_install_update_title">Change Version</string>
-    <string name="dialog_install_update_state">Install %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">Install %s %v</string>
     <string name="dialog_change_version_title">Change Version</string>
-    <string name="dialog_change_version_msg">Are you sure you want to switch %s from version %v1 to %v2?</string>
+    <string name="dialog_change_version_msg" formatted="false">Are you sure you want to switch %s from version %v1 to %v2?</string>
     <string name="dialog_change_version_positive">Yes</string>
     <string name="dialog_change_version_negative">No</string>
     <string name="dialog_install_game_title">Add a New Instance</string>
@@ -386,7 +386,7 @@
     <string name="dialog_install_fail_title">Installation Failed</string>
     <string name="dialog_install_fail_positive">OK</string>
     <string name="dialog_incorrect_version_title">Installation Failed</string>
-    <string name="dialog_incorrect_version_msg">This library requires the game version %s1, but the installed one is %s2.</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">This library requires the game version %s1, but the installed one is %s2.</string>
     <string name="dialog_incorrect_version_positive">OK</string>
     <string name="dialog_incorrect_installer_title">Installation Failed</string>
     <string name="dialog_incorrect_installer_msg">Unable to identify the provided file. If you are installing a mod, go to the "Mods" page.</string>
@@ -581,7 +581,7 @@
     <string name="game_setting_ui_alert">Warning</string>
     <string name="game_setting_ui_game_dir_alert_text">Turn on the \'Isolated\' option under \'Working Directory\' to allow the current instance to store its settings, saves, and mods in a separate directory.\n\nIt is recommended to turn this option on to avoid mod conflicts, but you\'ll need to move your saves manually.</string>
     <string name="game_setting_ui_skin_alert_text">Skins for offline accounts are now supported. You can go to the account settings to change your skin and cape, but other players cannot see it in multiplayer.</string>
-    <string name="game_setting_ui_alert_text">Current instance [%s] has enabled per-instance settings, all options on this page will not affect that instance. Click here to modify its own options.</string>
+    <string name="game_setting_ui_alert_text" formatted="false">Current instance [%s] has enabled per-instance settings, all options on this page will not affect that instance. Click here to modify its own options.</string>
     <string name="game_setting_ui_alert_jump">Edit Current Instance Settings</string>
     <string name="game_setting_ui_java_path">Java Path</string>
     <string name="game_setting_ui_java_path_auto">Automatically Select</string>
@@ -594,9 +594,9 @@
     <string name="game_setting_ui_game_ram">Memory</string>
     <string name="game_setting_ui_auto_ram">Automatically allocate</string>
     <string name="game_setting_ui_min_ram">Minimum Memory</string>
-    <string name="game_setting_ui_used_ram">%s GB Used</string>
-    <string name="game_setting_ui_min_distribution">%s GB Minimum</string>
-    <string name="game_setting_ui_actual_distribution">%s GB Allocated</string>
+    <string name="game_setting_ui_used_ram" formatted="false">%s GB Used</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">%s GB Minimum</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">%s GB Allocated</string>
     <string name="game_setting_ui_resolution">Resolution</string>
     <string name="game_setting_ui_server">Server Address</string>
     <string name="game_setting_ui_log">Show Logs</string>

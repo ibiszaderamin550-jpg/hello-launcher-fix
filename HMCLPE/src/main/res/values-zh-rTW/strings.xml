@@ -28,7 +28,7 @@
     <string name="loading_hint_java_17">正在檢查 Java 17…</string>
     <string name="dialog_add_verify_server_name">服務器名稱</string>
     <string name="dialog_add_verify_server_nide_name">服務器名稱</string>
-    <string name="dialog_verify_msg">您的設備碼為：\n%s\n請填寫與此設備碼匹配的授權驗證碼。</string>
+    <string name="dialog_verify_msg" formatted="false">您的設備碼為：\n%s\n請填寫與此設備碼匹配的授權驗證碼。</string>
     <string name="loading_hint_ready">準備就緒，即將進入啟動器…</string>
     <string name="loading_hint_failed">核心資源安裝/更新失敗，請檢查網絡並重啟應用，如果無效，請聯繫開發者</string>
     <string name="launcher_scroll_text_account">賬戶</string>
@@ -99,7 +99,7 @@
     <string name="dialog_add_microsoft_account_hint">提示</string>
     <string name="dialog_add_microsoft_account_hint_text">您需要點擊登錄按鈕，並在新打開的瀏覽器窗口中完成登錄。</string>
     <string name="dialog_add_microsoft_account_purchase"><a href="https://www.minecraft.net/zh-hans/store/minecraft-java-edition">購買 Minecraft</a></string>
-    <string name="dialog_add_microsoft_account_help"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">如何修改賬戶出生日期</a></string>
+    <string name="dialog_add_microsoft_account_help" formatted="false"><a href="https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a">如何修改賬戶出生日期</a></string>
     <string name="dialog_add_microsoft_account_setting"><a href="https://account.live.com/editprof.aspx">賬戶設置頁</a></string>
     <string name="dialog_add_microsoft_account_login">登錄</string>
     <string name="dialog_add_microsoft_account_cancel">取消</string>
@@ -181,7 +181,7 @@
     <string name="mod_manager_ui_disable">禁用</string>
     <string name="mod_manager_ui_select_all">全選</string>
     <string name="mod_manager_ui_negative">取消</string>
-    <string name="mod_manager_ui_info">%n，版本：%v，作者：%a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n，版本：%v，作者：%a</string>
     <string name="mod_manager_ui_unknown_info">未知</string>
     <string name="mod_manager_ui_official_page">官方頁面</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -193,7 +193,7 @@
     <string name="dialog_delete_mod_positive">是</string>
     <string name="dialog_delete_mod_negative">否</string>
     <string name="dialog_check_mod_update_title">正在檢查更新</string>
-    <string name="dialog_check_mod_update_task">檢查模組更新 - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">檢查模組更新 - %c/%t</string>
     <string name="dialog_check_mod_update_negative">取消</string>
     <string name="mod_update_ui_title">檢查模組更新</string>
     <string name="mod_update_ui_file">文件</string>
@@ -207,7 +207,7 @@
     <string name="world_manager_ui_refresh">刷新</string>
     <string name="world_manager_ui_add">添加世界</string>
     <string name="world_manager_ui_download">存檔下載</string>
-    <string name="world_manager_ui_info">%f。上一次遊戲時間：%t。遊戲版本：%v。</string>
+    <string name="world_manager_ui_info" formatted="false">%f。上一次遊戲時間：%t。遊戲版本：%v。</string>
     <string name="world_manager_ui_unknown_game_version">未知</string>
     <string name="export_world_ui_title">導出世界</string>
     <string name="export_world_ui_sub_title">導出此世界</string>
@@ -215,7 +215,7 @@
     <string name="export_world_ui_world_name">世界名稱</string>
     <string name="export_world_ui_game_version">遊戲版本</string>
     <string name="export_world_ui_export">導出</string>
-    <string name="manage_datapack_ui_title">世界 %w - 數據包</string>
+    <string name="manage_datapack_ui_title" formatted="false">世界 %w - 數據包</string>
     <string name="manage_datapack_ui_refresh">刷新</string>
     <string name="manage_datapack_ui_add">添加數據包</string>
     <string name="manage_datapack_ui_delete">刪除</string>
@@ -280,8 +280,8 @@
     <string name="dialog_copy_version_positive">確定</string>
     <string name="dialog_copy_version_negative">取消</string>
     <string name="dialog_delete_version_title">警告</string>
-    <string name="dialog_delete_version_msg">真的要刪除版本 %s 嗎？你將無法找回被刪除的文件！</string>
-    <string name="dialog_delete_version_isolate_msg">由於該遊戲使用了版本隔離，所以刪除該版本將導致該遊戲的存檔等數據一同被刪除，真的要刪除版本 %s 嗎？</string>
+    <string name="dialog_delete_version_msg" formatted="false">真的要刪除版本 %s 嗎？你將無法找回被刪除的文件！</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">由於該遊戲使用了版本隔離，所以刪除該版本將導致該遊戲的存檔等數據一同被刪除，真的要刪除版本 %s 嗎？</string>
     <string name="dialog_delete_version_positive">刪除</string>
     <string name="dialog_delete_version_negative">取消</string>
     <string name="default_game_file_directory_list_pri">公有目錄</string>
@@ -363,9 +363,9 @@
     <string name="dialog_install_local_title">從本地文件安裝/升級</string>
     <string name="dialog_install_local_recognize">正在識別安裝軟件</string>
     <string name="dialog_install_update_title">更換版本</string>
-    <string name="dialog_install_update_state">安裝 %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">安裝 %s %v</string>
     <string name="dialog_change_version_title">更換版本</string>
-    <string name="dialog_change_version_msg">你確定要將 %s 從 %v1 更換成 %v2 嗎？</string>
+    <string name="dialog_change_version_msg" formatted="false">你確定要將 %s 從 %v1 更換成 %v2 嗎？</string>
     <string name="dialog_change_version_positive">是</string>
     <string name="dialog_change_version_negative">否</string>
     <string name="dialog_install_game_title">安裝新遊戲版本</string>
@@ -389,7 +389,7 @@
     <string name="dialog_install_fail_title">安裝失敗</string>
     <string name="dialog_install_fail_positive">確定</string>
     <string name="dialog_incorrect_version_title">安裝失敗</string>
-    <string name="dialog_incorrect_version_msg">該軟件需要的遊戲版本為 %s1，但實際的遊戲版本為 %s2。</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">該軟件需要的遊戲版本為 %s1，但實際的遊戲版本為 %s2。</string>
     <string name="dialog_incorrect_version_positive">確定</string>
     <string name="dialog_incorrect_installer_title">安裝失敗</string>
     <string name="dialog_incorrect_installer_msg">無法識別要安裝的軟件。如果你要安裝 Mod，你需要在模組管理頁面安裝模組。</string>
@@ -584,7 +584,7 @@
     <string name="game_setting_ui_alert">警告</string>
     <string name="game_setting_ui_game_dir_alert_text">在“運行路徑（版本隔離）”選項中開啟“各版本獨立”使當前版本獨立存放設置、存檔、模組等數據，使用模組時建議開啟此選項以避免不同版本模組衝突。修改此選項後請自行移動存檔等文件！</string>
     <string name="game_setting_ui_skin_alert_text">現已支持離線賬戶更換皮膚，你可以到賬戶頁面更改離線賬戶的皮膚和披風（多人遊戲下其他玩家無法看到你的皮膚）</string>
-    <string name="game_setting_ui_alert_text">當前遊戲版本 %s 啟用了遊戲特定設置，因此本頁面選項不對該遊戲生效。點擊鏈接前往該遊戲版本的遊戲特定設置頁</string>
+    <string name="game_setting_ui_alert_text" formatted="false">當前遊戲版本 %s 啟用了遊戲特定設置，因此本頁面選項不對該遊戲生效。點擊鏈接前往該遊戲版本的遊戲特定設置頁</string>
     <string name="game_setting_ui_alert_jump">編輯遊戲特點設置</string>
     <string name="game_setting_ui_java_path">Java 路徑</string>
     <string name="game_setting_ui_java_path_auto">自動選擇合適的 Java</string>
@@ -597,10 +597,10 @@
     <string name="game_setting_ui_game_ram">遊戲內存</string>
     <string name="game_setting_ui_auto_ram">自動分配</string>
     <string name="game_setting_ui_min_ram">最低分配</string>
-    <string name="game_setting_ui_used_ram">已使用 %s GB</string>
-    <string name="game_setting_ui_min_distribution">最低分配 %s GB</string>
-    <string name="game_setting_ui_actual_distribution">實際分配 %s GB</string>
-    <string name="game_setting_ui_resolution">實際分配 %s GB</string>
+    <string name="game_setting_ui_used_ram" formatted="false">已使用 %s GB</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">最低分配 %s GB</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">實際分配 %s GB</string>
+    <string name="game_setting_ui_resolution" formatted="false">實際分配 %s GB</string>
     <string name="game_setting_ui_server">服務器地址</string>
     <string name="game_setting_ui_log">查看日誌</string>
     <string name="game_setting_ui_server_hint">默認，啟動遊戲後可以直接進入對應服務器</string>
