@@ -18,19 +18,21 @@ jobs:
       with:
         java-version: 11
 
-    - name: Download and extract JRE21 and JRE25 from Zalith
+    - name: Download and extract JRE21 and JRE25
       run: |
-        curl -L -o zalith.apk "https://github.com/ZalithLauncher/ZalithLauncher/releases/download/v1.4.1.4/ZalithLauncher-1.4.1.4.apk"
-        unzip -o zalith.apk "assets/components/jre-21/*" -d zalith_extracted/
-        unzip -o zalith.apk "assets/components/jre-25/*" -d zalith_extracted/
+        BASE="https://github.com/ibiszaderamin550-jpg/hello-launcher-fix/releases/download/jre-assets"
         mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE21
         mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE25
+        curl -L -o jre21-arm64.tar.xz "$BASE/jre21-bin-arm64.tar.xz"
+        curl -L -o jre21-universal.tar.xz "$BASE/jre21-universal.tar.xz"
+        curl -L -o jre25-arm64.tar.xz "$BASE/jre25-bin-arm64.tar.xz"
+        curl -L -o jre25-universal.tar.xz "$BASE/jre25-universal.tar.xz"
         cd HMCLPE/src/main/assets/app_runtime/java/JRE21
-        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-21/bin-arm64.tar.xz
-        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-21/universal.tar.xz
+        tar -xf $GITHUB_WORKSPACE/jre21-arm64.tar.xz
+        tar -xf $GITHUB_WORKSPACE/jre21-universal.tar.xz
         cd $GITHUB_WORKSPACE/HMCLPE/src/main/assets/app_runtime/java/JRE25
-        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/bin-arm64.tar.xz
-        tar -xf $GITHUB_WORKSPACE/zalith_extracted/assets/components/jre-25/universal.tar.xz
+        tar -xf $GITHUB_WORKSPACE/jre25-arm64.tar.xz
+        tar -xf $GITHUB_WORKSPACE/jre25-universal.tar.xz
 
     - name: Build apk
       run: |
@@ -40,5 +42,5 @@ jobs:
     - name: Upload apk
       uses: actions/upload-artifact@v4
       with:
-        name: app-debug
+        name: HYPER-Launcher
         path: HMCLPE/build/outputs/apk/release/*
