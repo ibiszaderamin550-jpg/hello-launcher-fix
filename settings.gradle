@@ -10,5 +10,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Hello Minecraft Launcher Pocket Edition"
 include ':HMCLPE'
-include ':Boat'
 include ':PojavLauncher'
