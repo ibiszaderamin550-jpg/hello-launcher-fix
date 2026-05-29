@@ -38,7 +38,7 @@ jobs:
         ./gradlew assembleRelease
 
     - name: Upload apk
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: app-debug
         path: HMCLPE/build/outputs/apk/release/*
