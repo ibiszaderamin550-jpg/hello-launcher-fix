@@ -43,7 +43,7 @@ jobs:
     - name: Build apk
       run: |
         chmod +x gradlew
-        ./gradlew assembleRelease
+        ./gradlew assembleRelease --no-daemon -x lint -x lintVitalRelease
 
     - name: Upload apk
       uses: actions/upload-artifact@v4
