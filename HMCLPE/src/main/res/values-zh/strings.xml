@@ -10,7 +10,7 @@
     <string name="dialog_unknown_error_positive">确定</string>
 
     <string name="dialog_verify_title">开发版测试权限验证</string>
-    <string name="dialog_verify_msg">您的设备码为：\n%s\n请填写与此设备码匹配的授权验证码。</string>
+    <string name="dialog_verify_msg" formatted="false">您的设备码为：\n%s\n请填写与此设备码匹配的授权验证码。</string>
     <string name="dialog_verify_code">授权验证码</string>
     <string name="dialog_verify_donate">获取权限</string>
     <string name="dialog_verify_copy">复制设备码</string>
@@ -117,7 +117,7 @@
     <string name="dialog_add_microsoft_account_hint">提示</string>
     <string name="dialog_add_microsoft_account_hint_text">您需要点击登录按钮，并在新打开的浏览器窗口中完成登录。</string>
     <string name="dialog_add_microsoft_account_purchase"><a href='https://www.minecraft.net/zh-hans/store/minecraft-java-edition'>购买 Minecraft</a></string>
-    <string name="dialog_add_microsoft_account_help"><a href='https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a'>如何修改账户出生日期</a></string>
+    <string name="dialog_add_microsoft_account_help" formatted="false"><a href='https://support.microsoft.com/zh-cn/account-billing/%E5%A6%82%E4%BD%95%E6%9B%B4%E6%94%B9-microsoft-%E5%B8%90%E6%88%B7%E4%B8%8A%E7%9A%84%E5%87%BA%E7%94%9F%E6%97%A5%E6%9C%9F-837badbc-999e-54d2-2617-d19206b9540a'>如何修改账户出生日期</a></string>
     <string name="dialog_add_microsoft_account_setting"><a href='https://account.live.com/editprof.aspx'>账户设置页</a></string>
     <string name="dialog_add_microsoft_account_login">登录</string>
     <string name="dialog_add_microsoft_account_cancel">取消</string>
@@ -251,7 +251,7 @@
     <string name="export_world_ui_game_version">游戏版本</string>
     <string name="export_world_ui_export">导出</string>
 
-    <string name="manage_datapack_ui_title">世界 %w - 数据包</string>
+    <string name="manage_datapack_ui_title" formatted="false">世界 %w - 数据包</string>
     <string name="manage_datapack_ui_refresh">刷新</string>
     <string name="manage_datapack_ui_add">添加数据包</string>
     <string name="manage_datapack_ui_delete">删除</string>
@@ -330,8 +330,8 @@
     <string name="dialog_copy_version_negative">取消</string>
 
     <string name="dialog_delete_version_title">警告</string>
-    <string name="dialog_delete_version_msg">真的要删除版本 %s 吗？你将无法找回被删除的文件！</string>
-    <string name="dialog_delete_version_isolate_msg">由于该游戏使用了版本隔离，所以删除该版本将导致该游戏的存档等数据一同被删除，真的要删除版本 %s 吗？</string>
+    <string name="dialog_delete_version_msg" formatted="false">真的要删除版本 %s 吗？你将无法找回被删除的文件！</string>
+    <string name="dialog_delete_version_isolate_msg" formatted="false">由于该游戏使用了版本隔离，所以删除该版本将导致该游戏的存档等数据一同被删除，真的要删除版本 %s 吗？</string>
     <string name="dialog_delete_version_positive">删除</string>
     <string name="dialog_delete_version_negative">取消</string>
 
@@ -678,7 +678,7 @@
     <string name="game_setting_ui_skin_alert">提示</string>
     <string name="game_setting_ui_skin_alert_text">现已支持离线账户更换皮肤，你可以到账户页面更改离线账户的皮肤和披风（多人游戏下其他玩家无法看到你的皮肤）</string>
     <string name="game_setting_ui_alert">警告</string>
-    <string name="game_setting_ui_alert_text">当前游戏版本 %s 启用了游戏特定设置，因此本页面选项不对该游戏生效。点击链接前往该游戏版本的游戏特定设置页</string>
+    <string name="game_setting_ui_alert_text" formatted="false">当前游戏版本 %s 启用了游戏特定设置，因此本页面选项不对该游戏生效。点击链接前往该游戏版本的游戏特定设置页</string>
     <string name="game_setting_ui_alert_jump">编辑游戏特点设置</string>
     <string name="game_setting_ui_java_path">Java 路径</string>
     <string name="game_setting_ui_java_path_auto">自动选择合适的 Java</string>
@@ -691,9 +691,9 @@
     <string name="game_setting_ui_game_ram">游戏内存</string>
     <string name="game_setting_ui_auto_ram">自动分配</string>
     <string name="game_setting_ui_min_ram">最低分配</string>
-    <string name="game_setting_ui_used_ram">已使用 %s GB</string>
-    <string name="game_setting_ui_min_distribution">最低分配 %s GB</string>
-    <string name="game_setting_ui_actual_distribution">实际分配 %s GB</string>
+    <string name="game_setting_ui_used_ram" formatted="false">已使用 %s GB</string>
+    <string name="game_setting_ui_min_distribution" formatted="false">最低分配 %s GB</string>
+    <string name="game_setting_ui_actual_distribution" formatted="false">实际分配 %s GB</string>
     <string name="game_setting_ui_resolution">游戏窗口分辨率</string>
     <string name="game_setting_ui_log">查看日志</string>
     <string name="game_setting_ui_server">服务器地址</string>
