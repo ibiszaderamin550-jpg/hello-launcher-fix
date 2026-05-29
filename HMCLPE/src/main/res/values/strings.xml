@@ -224,7 +224,7 @@
     <string name="mod_manager_ui_disable">Disable</string>
     <string name="mod_manager_ui_select_all">Select All</string>
     <string name="mod_manager_ui_negative">Cancel</string>
-    <string name="mod_manager_ui_info">%n, Version: %v, Author(s): %a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n, Version: %v, Author(s): %a</string>
     <string name="mod_manager_ui_unknown_info">Unknown</string>
     <string name="mod_manager_ui_official_page">Official Page</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -236,7 +236,7 @@
     <string name="dialog_delete_mod_positive">Yes</string>
     <string name="dialog_delete_mod_negative">No</string>
     <string name="dialog_check_mod_update_title">Checking for Updates</string>
-    <string name="dialog_check_mod_update_task">Check for Updates - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">Check for Updates - %c/%t</string>
     <string name="dialog_check_mod_update_negative">Cancel</string>
     <string name="mod_update_ui_title">Check for Updates</string>
     <string name="mod_update_ui_file">File</string>
@@ -411,9 +411,9 @@
     <string name="dialog_install_local_title">Install/Update from Local File</string>
     <string name="dialog_install_local_recognize">Recognizing Installer</string>
     <string name="dialog_install_update_title">Change Version</string>
-    <string name="dialog_install_update_state">Install %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">Install %s %v</string>
     <string name="dialog_change_version_title">Change Version</string>
-    <string name="dialog_change_version_msg">Are you sure you want to switch %s from version %v1 to %v2?</string>
+    <string name="dialog_change_version_msg" formatted="false">Are you sure you want to switch %s from version %v1 to %v2?</string>
     <string name="dialog_change_version_positive">Yes</string>
     <string name="dialog_change_version_negative">No</string>
     <string name="dialog_install_game_title">Add a New Instance</string>
@@ -437,7 +437,7 @@
     <string name="dialog_install_fail_title">Installation Failed</string>
     <string name="dialog_install_fail_positive">OK</string>
     <string name="dialog_incorrect_version_title">Installation Failed</string>
-    <string name="dialog_incorrect_version_msg">This library requires the game version %s1, but the installed one is %s2.</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">This library requires the game version %s1, but the installed one is %s2.</string>
     <string name="dialog_incorrect_version_positive">OK</string>
     <string name="dialog_incorrect_installer_title">Installation Failed</string>
     <string name="dialog_incorrect_installer_msg">Unable to identify the provided file. If you are installing a mod, go to the "Mods" page.</string>

@@ -211,7 +211,7 @@
     <string name="mod_manager_ui_disable">禁用</string>
     <string name="mod_manager_ui_select_all">全选</string>
     <string name="mod_manager_ui_negative">取消</string>
-    <string name="mod_manager_ui_info">%n，版本：%v，作者：%a</string>
+    <string name="mod_manager_ui_info" formatted="false">%n，版本：%v，作者：%a</string>
     <string name="mod_manager_ui_unknown_info">未知</string>
     <string name="mod_manager_ui_official_page">官方页面</string>
     <string name="mod_manager_ui_mcbbs_page">MCBBS</string>
@@ -225,7 +225,7 @@
     <string name="dialog_delete_mod_negative">否</string>
 
     <string name="dialog_check_mod_update_title">正在检查更新</string>
-    <string name="dialog_check_mod_update_task">检查模组更新 - %c/%t</string>
+    <string name="dialog_check_mod_update_task" formatted="false">检查模组更新 - %c/%t</string>
     <string name="dialog_check_mod_update_negative">取消</string>
 
     <string name="mod_update_ui_title">检查模组更新</string>
@@ -241,7 +241,7 @@
     <string name="world_manager_ui_refresh">刷新</string>
     <string name="world_manager_ui_add">添加世界</string>
     <string name="world_manager_ui_download">存档下载</string>
-    <string name="world_manager_ui_info">%f。 上一次游戏时间：%t。 游戏版本：%v。</string>
+    <string name="world_manager_ui_info" formatted="false">%f。 上一次游戏时间：%t。 游戏版本：%v。</string>
     <string name="world_manager_ui_unknown_game_version">未知</string>
 
     <string name="export_world_ui_title">导出世界</string>
@@ -430,10 +430,10 @@
     <string name="dialog_install_local_recognize">正在识别安装软件</string>
 
     <string name="dialog_install_update_title">更换版本</string>
-    <string name="dialog_install_update_state">安装 %s %v</string>
+    <string name="dialog_install_update_state" formatted="false">安装 %s %v</string>
 
     <string name="dialog_change_version_title">更换版本</string>
-    <string name="dialog_change_version_msg">你确定要将 %s 从 %v1 更换成 %v2 吗？</string>
+    <string name="dialog_change_version_msg" formatted="false">你确定要将 %s 从 %v1 更换成 %v2 吗？</string>
     <string name="dialog_change_version_positive">是</string>
     <string name="dialog_change_version_negative">否</string>
 
@@ -461,7 +461,7 @@
     <string name="dialog_install_fail_positive">确定</string>
 
     <string name="dialog_incorrect_version_title">安装失败</string>
-    <string name="dialog_incorrect_version_msg">该软件需要的游戏版本为 %s1，但实际的游戏版本为 %s2。</string>
+    <string name="dialog_incorrect_version_msg" formatted="false">该软件需要的游戏版本为 %s1，但实际的游戏版本为 %s2。</string>
     <string name="dialog_incorrect_version_positive">确定</string>
 
     <string name="dialog_incorrect_installer_title">安装失败</string>
