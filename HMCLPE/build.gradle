@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace "com.tungsten.hmclpe"
     compileSdk 34
     dexOptions {
         javaMaxHeapSize "4g"

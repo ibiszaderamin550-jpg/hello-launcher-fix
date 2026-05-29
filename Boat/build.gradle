@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace "cosine.boat"
     compileSdk 34
 
     defaultConfig {

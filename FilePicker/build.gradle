@@ -3,6 +3,7 @@ plugins {
 }
 
 android {
+    namespace "com.tungsten.filepicker"
     compileSdk 34
 
     defaultConfig {
