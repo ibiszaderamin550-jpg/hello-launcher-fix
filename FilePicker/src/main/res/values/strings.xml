@@ -22,4 +22,6 @@
     <string name="filebrowser_provider">File Browser</string>
     <string name="permission_request_error">Permission request failed</string>
     <string name="unknown_error">An unknown error occurred</string>
+    <string name="error_common">An error occurred</string>
+    <string name="error_occurred">Error occurred</string>
 </resources>
