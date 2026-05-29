@@ -1,3 +1,4 @@
+#include <pthread.h>
 #include <jni.h>
 #include <assert.h>
 #include <dlfcn.h>
