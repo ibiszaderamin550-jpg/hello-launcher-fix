@@ -3,6 +3,10 @@ plugins {
 }
 
 android {
+    aaptOptions {
+        noCompress ""
+        failOnMissingConfigEntry false
+    }
     namespace "net.kdt.pojavlaunch"
     compileSdk 34
 
