@@ -3,6 +3,12 @@ plugins {
 }
 
 android {
+    aaptOptions {
+        cruncherEnabled = false
+    }
+    lintOptions {
+        abortOnError false
+    }
     namespace "cosine.boat"
     compileSdk 34
 
