@@ -20,7 +20,7 @@ jobs:
 
     - name: Download and extract JRE21 and JRE25 from Zalith
       run: |
-        curl -L -o zalith.apk "https://github.com/ZalithLauncher/ZalithLauncher/releases/download/1.4.1.4/ZalithLauncher-1.4.1.4.apk"
+        curl -L -o zalith.apk "https://github.com/ZalithLauncher/ZalithLauncher/releases/download/v1.4.1.4/ZalithLauncher-1.4.1.4.apk"
         unzip -o zalith.apk "assets/components/jre-21/*" -d zalith_extracted/
         unzip -o zalith.apk "assets/components/jre-25/*" -d zalith_extracted/
         mkdir -p HMCLPE/src/main/assets/app_runtime/java/JRE21
