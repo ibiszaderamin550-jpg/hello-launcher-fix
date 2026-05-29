@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FilePicker</string>
+    <string name="no_operation_error">Operation failed</string>
+    <string name="no_files_paste">No files to paste</string>
+    <string name="select_multiple">Select multiple</string>
 </resources>
