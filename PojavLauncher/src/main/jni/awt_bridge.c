@@ -23,7 +23,7 @@ jfieldID field_x;
 jfieldID field_y;
 
 jint JNI_OnLoad(JavaVM* vm, void* reserved) {
-    if (dalvikJavaVMPtr == NULL) {
+    if (dalvikJavaVMPtr == 0) {
         //Save dalvik global JavaVM pointer
         dalvikJavaVMPtr = vm;
     } else if (dalvikJavaVMPtr != vm) {
@@ -34,23 +34,23 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved) {
 }
 
 JNIEXPORT void JNICALL Java_net_kdt_pojavlaunch_AWTInputBridge_nativeSendData(JNIEnv* env, jclass clazz, jint type, jint i1, jint i2, jint i3, jint i4) {
-    if (runtimeJNIEnvPtr_INPUT == NULL) {
-        if (runtimeJavaVMPtr == NULL) {
+    if (runtimeJNIEnvPtr_INPUT == 0) {
+        if (runtimeJavaVMPtr == 0) {
             return;
         } else {
-            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_INPUT, NULL);
+            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_INPUT, 0);
         }
     }
 
-    if (method_ReceiveInput == NULL) {
+    if (method_ReceiveInput == 0) {
         class_CTCAndroidInput = (*runtimeJNIEnvPtr_INPUT)->FindClass(runtimeJNIEnvPtr_INPUT, "net/java/openjdk/cacio/ctc/CTCAndroidInput");
         if ((*runtimeJNIEnvPtr_INPUT)->ExceptionCheck(runtimeJNIEnvPtr_INPUT) == JNI_TRUE) {
             (*runtimeJNIEnvPtr_INPUT)->ExceptionClear(runtimeJNIEnvPtr_INPUT);
             class_CTCAndroidInput = (*runtimeJNIEnvPtr_INPUT)->FindClass(runtimeJNIEnvPtr_INPUT, "com/github/caciocavallosilano/cacio/ctc/CTCAndroidInput");
         }
-        assert(class_CTCAndroidInput != NULL);
+        assert(class_CTCAndroidInput != 0);
         method_ReceiveInput = (*runtimeJNIEnvPtr_INPUT)->GetStaticMethodID(runtimeJNIEnvPtr_INPUT, class_CTCAndroidInput, "receiveData", "(IIIII)V");
-        assert(method_ReceiveInput != NULL);
+        assert(method_ReceiveInput != 0);
     }
     (*runtimeJNIEnvPtr_INPUT)->CallStaticVoidMethod(
         runtimeJNIEnvPtr_INPUT,
@@ -64,34 +64,34 @@ JNIEXPORT void JNICALL Java_net_kdt_pojavlaunch_AWTInputBridge_nativeSendData(JN
 // int printed = 0;
 int threadAttached = 0;
 JNIEXPORT jintArray JNICALL Java_net_kdt_pojavlaunch_utils_JREUtils_renderAWTScreenFrame(JNIEnv* env, jclass clazz /*, jobject canvas, jint width, jint height */) {
-    if (runtimeJNIEnvPtr_GRAPHICS == NULL) {
-        if (runtimeJavaVMPtr == NULL) {
-            return NULL;
+    if (runtimeJNIEnvPtr_GRAPHICS == 0) {
+        if (runtimeJavaVMPtr == 0) {
+            return 0;
         } else {
-            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_GRAPHICS, NULL);
+            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_GRAPHICS, 0);
         }
     }
 
     int *rgbArray;
     jintArray jreRgbArray, androidRgbArray;
   
-    if (method_GetRGB == NULL) {
+    if (method_GetRGB == 0) {
         class_CTCScreen = (*runtimeJNIEnvPtr_GRAPHICS)->FindClass(runtimeJNIEnvPtr_GRAPHICS, "net/java/openjdk/cacio/ctc/CTCScreen");
         if ((*runtimeJNIEnvPtr_GRAPHICS)->ExceptionCheck(runtimeJNIEnvPtr_GRAPHICS) == JNI_TRUE) {
             (*runtimeJNIEnvPtr_GRAPHICS)->ExceptionClear(runtimeJNIEnvPtr_GRAPHICS);
             class_CTCScreen = (*runtimeJNIEnvPtr_GRAPHICS)->FindClass(runtimeJNIEnvPtr_GRAPHICS, "com/github/caciocavallosilano/cacio/ctc/CTCScreen");
         }
-        assert(class_CTCScreen != NULL);
+        assert(class_CTCScreen != 0);
         method_GetRGB = (*runtimeJNIEnvPtr_GRAPHICS)->GetStaticMethodID(runtimeJNIEnvPtr_GRAPHICS, class_CTCScreen, "getCurrentScreenRGB", "()[I");
-        assert(method_GetRGB != NULL);
+        assert(method_GetRGB != 0);
     }
     jreRgbArray = (jintArray) (*runtimeJNIEnvPtr_GRAPHICS)->CallStaticObjectMethod(
         runtimeJNIEnvPtr_GRAPHICS,
         class_CTCScreen,
         method_GetRGB
     );
-    if (jreRgbArray == NULL) {
-        return NULL;
+    if (jreRgbArray == 0) {
+        return 0;
     }
     
     // Copy JRE RGB array memory to Android.
@@ -100,14 +100,14 @@ JNIEXPORT jintArray JNICALL Java_net_kdt_pojavlaunch_utils_JREUtils_renderAWTScr
     androidRgbArray = (*env)->NewIntArray(env, arrayLength);
     (*env)->SetIntArrayRegion(env, androidRgbArray, 0, arrayLength, rgbArray);
 
-    (*runtimeJNIEnvPtr_GRAPHICS)->ReleaseIntArrayElements(runtimeJNIEnvPtr_GRAPHICS, jreRgbArray, rgbArray, NULL);
+    (*runtimeJNIEnvPtr_GRAPHICS)->ReleaseIntArrayElements(runtimeJNIEnvPtr_GRAPHICS, jreRgbArray, rgbArray, 0);
     // (*env)->DeleteLocalRef(env, androidRgbArray);
     // free(rgbArray);
     
     return androidRgbArray;
 }
 
-jobject clipboard = NULL;
+jobject clipboard = 0;
 jclass clipboardClass;
 static jobject obtainClipboard(JNIEnv *env) {
     jclass toolkitClass = (*runtimeJNIEnvPtr_CLIPBOARD)->FindClass(runtimeJNIEnvPtr_CLIPBOARD,"java/awt/Toolkit");
@@ -120,14 +120,14 @@ static jobject obtainClipboard(JNIEnv *env) {
 
 JNIEXPORT void JNICALL
 Java_net_kdt_pojavlaunch_AWTInputBridge_nativeMoveWindow(JNIEnv *env, jclass clazz, jint xoff, jint yoff) {
-    if (runtimeJNIEnvPtr_INPUT == NULL) {
-        if (runtimeJavaVMPtr == NULL) {
+    if (runtimeJNIEnvPtr_INPUT == 0) {
+        if (runtimeJavaVMPtr == 0) {
             return;
         } else {
-            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_INPUT, NULL);
+            (*runtimeJavaVMPtr)->AttachCurrentThread(runtimeJavaVMPtr, &runtimeJNIEnvPtr_INPUT, 0);
         }
     }
-    if(field_y == NULL) {
+    if(field_y == 0) {
         class_Frame = (*runtimeJNIEnvPtr_INPUT)->FindClass(runtimeJNIEnvPtr_INPUT, "java/awt/Frame");
         method_GetFrames = (*runtimeJNIEnvPtr_INPUT)->GetStaticMethodID(runtimeJNIEnvPtr_INPUT, class_Frame, "getFrames", "()[Ljava/awt/Frame;");
         method_GetBounds = (*runtimeJNIEnvPtr_INPUT)->GetMethodID(runtimeJNIEnvPtr_INPUT, class_Frame, "getBounds", "(Ljava/awt/Rectangle;)Ljava/awt/Rectangle;");
