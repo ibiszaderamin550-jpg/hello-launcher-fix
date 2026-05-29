@@ -250,7 +250,7 @@
     <string name="world_manager_ui_refresh">Refresh</string>
     <string name="world_manager_ui_add">Add a World (.zip)</string>
     <string name="world_manager_ui_download">Download a World</string>
-    <string name="world_manager_ui_info">%f. Last played on %t. Game Version: %v.</string>
+    <string name="world_manager_ui_info" formatted="false">%f. Last played on %t. Game Version: %v.</string>
     <string name="world_manager_ui_unknown_game_version">Unknown</string>
     <string name="export_world_ui_title">Export World</string>
     <string name="export_world_ui_sub_title">Export World</string>
